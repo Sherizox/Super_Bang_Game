@@ -28,19 +28,19 @@ public class BallMoving : MonoBehaviour
         {
             if (Size >= 2.0f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.05f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.05f;
             }
             else if (Size >= 1.0f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.2f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.2f;
             }
             else if (Size >= 0.5f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.4f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.4f;
             }
             else
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.4f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.4f;
             }
 
             StartCollision = true;
@@ -50,19 +50,19 @@ public class BallMoving : MonoBehaviour
         {
            if (Size >= 2.0f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.015f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.015f;
             }
             else if (Size >= 1.0f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.03f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.03f;
             }
             else if (Size >= 0.5f)
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.05f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.05f;
             }
             else
             {
-                BallRigidbody.GetComponent<Rigidbody2D>().drag = 0.07f;
+                BallRigidbody.GetComponent<Rigidbody2D>().linearDamping = 0.07f;
             }
         }
         if (collision.gameObject.tag == "Ball")
