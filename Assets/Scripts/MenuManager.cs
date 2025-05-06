@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     public static int Score;
     public Text HealthText;
     public Text ScoreText;
+    public Text ScoreTextComplete;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,6 @@ public class MenuManager : MonoBehaviour
     {
         HealthText.text = Health.ToString() + "%";
         ScoreText.text = Score.ToString();
+        ScoreTextComplete.text = Score.ToString();
     }
 }
